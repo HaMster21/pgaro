@@ -7,7 +7,7 @@ ExternalProject_Add(
     PREFIX ${CMAKE_BINARY_DIR}/external/fakeit
     GIT_REPOSITORY https://github.com/eranpeer/FakeIt.git
     TIMEOUT 10
-    UPDATE_COMMAND ${GIT_EXECUTABLE} pull && make
+    UPDATE_COMMAND ${GIT_EXECUTABLE} pull
     CONFIGURE_COMMAND ""
     BUILD_COMMAND ""
     INSTALL_COMMAND ""
