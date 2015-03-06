@@ -1,0 +1,15 @@
+language: cpp
+
+compiler:
+- gcc
+- clang
+
+install:
+- sudo apt-get install cmake libboost1.55-all-dev
+
+before_script:
+- mkdir build && cd build
+- cmake ..
+
+script:
+- make all
